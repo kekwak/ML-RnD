@@ -7,8 +7,8 @@ Baseline для соревнования [Jigsaw Toxic Comment Classification Ch
 Нужны uv, токен Kaggle в `~/.kaggle/kaggle.json` и принятые правила соревнования на сайте.
 
 ```bash
-./scripts/run_baseline.sh                       # TF-IDF + LogReg
-./scripts/run_baseline.sh configs/random.yaml    # случайная модель
+./scripts/run_baseline.sh                      # TF-IDF + LogReg
+./scripts/run_baseline.sh configs/random.yaml  # случайная модель
 ```
 
 Результаты запуска сохраняются в `runs/`.
