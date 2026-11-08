@@ -7,4 +7,11 @@ authors = [
     { name = "kekwak", email = "kekwak@mail.ru" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "ipykernel>=7.4.0",
+    "kaggle>=2.2.5",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "six>=1.17.0",
+]
