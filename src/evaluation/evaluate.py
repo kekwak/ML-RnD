@@ -14,7 +14,7 @@ def parse_args():
 def evaluate(test_df, submission_df):
     raw_scores = roc_auc_score(test_df[LABELS], submission_df[LABELS], average=None)
     raw_scores_dict = {k: v.item() for k, v in zip(LABELS, raw_scores)}
-    raw_scores_dict.update({'final_score': sum(raw_scores) / len(raw_scores)})
+    raw_scores_dict.update({'avg_score': (sum(raw_scores) / len(raw_scores)).item()})
     return raw_scores_dict
 
 def main():

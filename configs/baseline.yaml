@@ -1,0 +1,17 @@
+run_name: baseline
+seed: 42
+
+n_splits: 5
+
+text_column: comment_text
+label_columns: ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
+
+train_csv_path: data/train.csv
+test_csv_path: data/test.csv
+
+vectorizer:
+  class: sklearn.feature_extraction.text.TfidfVectorizer
+  # params:
+clf_model:
+  class: sklearn.linear_model.LogisticRegression
+  # params:

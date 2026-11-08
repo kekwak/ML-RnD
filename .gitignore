@@ -9,4 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .env
-data
+/data/*
+!/data/.gitkeep
+/runs/*
+!/runs/.gitkeep

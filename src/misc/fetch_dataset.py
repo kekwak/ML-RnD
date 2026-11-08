@@ -14,5 +14,7 @@ kg.api.competition_download_files(
 )
 
 for file in os.listdir(DATA_PATH):
+    if not file.endswith(".zip"):
+        continue
     zipfile.ZipFile(f"{DATA_PATH}/{file}").extractall(DATA_PATH)
     os.remove(f"{DATA_PATH}/{file}")
