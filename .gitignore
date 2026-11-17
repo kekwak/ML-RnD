@@ -13,3 +13,7 @@ wheels/
 !/data/.gitkeep
 /runs/*
 !/runs/.gitkeep
+
+# MLflow
+mlruns/
+mlflow.db

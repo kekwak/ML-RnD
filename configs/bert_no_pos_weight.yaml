@@ -1,0 +1,21 @@
+run_name: bert_no_pos_weight
+seed: 42
+
+n_splits: 5
+folds: [0]
+
+text_column: comment_text
+label_columns: ['toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
+
+train_csv_path: data/train.csv
+test_csv_path: data/test.csv
+
+model:
+  name: bert-base-uncased
+  max_len: 512
+  freeze_encoder: false
+train:
+  batch_size: 32
+  epochs: 2
+  lr: 2.0e-5
+  pos_weight: false
